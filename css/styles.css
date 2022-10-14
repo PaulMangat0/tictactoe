@@ -1,0 +1,76 @@
+
+/* ******************** BASE STYLES **************************** */
+
+
+ul{
+	list-style-type: none; /* no bullets */
+}
+
+.grid {
+  display: grid;
+}
+
+/* ******************** SCOREBOARD **************************** */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.scoreboard-module {
+  background-color: black;
+  color: yellow;
+  font-family: 'Bungee', cursive;
+  font-size: 2.5rem;
+  width: 500px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.scoreboard-player {
+  font-size: 2rem;
+  color: white;
+}
+
+
+/* ******************** INTERFACE **************************** */
+.interface-module {
+  margin: 2rem auto;
+  padding: 1rem;
+  width:500px;
+  /* border: 1px lightgrey solid; */
+  background-color: lightgrey;
+}
+
+.interface-module--grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.interface__btn{
+  font-size: 1rem;
+  height:50px;
+  border: 0;
+}
+
+.interface-module__input {
+  margin-inline: 5px;
+}
+
+/* ******************** GAMEBOARD **************************** */
+
+.gameboard-module {
+  margin: 2rem auto;
+  width:300px;
+  /* border: 1px lightgrey solid; */
+  background-color: cadetblue;
+}
+
+.gameboard--grid {
+  grid-template-columns: 100px 100px 100px;
+
+}
+
+.gameboard__spot {
+  text-align: center;
+  font-size: 100px;
+  height: 100px;
+  border: 1px lightgrey solid;
+ 
+}

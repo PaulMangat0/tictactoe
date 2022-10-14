@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Javascript -->
+  <script src="js/diyEmitter.js" defer></script>
+  <script src="js/scoreboard.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <!-- <script src="js/test.js" defer></script> -->
+  <title>TICTACTOE</title>
+</head>
+<body>
+ 
+  <!-- SCOREBOARD -->
+  
+<div class="scoreboard-module" id="scoreboard">SCOREBOARD
+  <ul id="player-list"></ul>
+  <template id="player-score-template">
+    <li class="scoreboard-player">{{player-name}} : {{player-score}}</li>
+  </template>  
+</div>
+
+<!-- TIC-TAC-TOE GAME -->
+
+<div class="tictactoe">
+
+  <!-- tic-tac-toe board -->
+  <div class="gameboard-module grid gameboard--grid" id="gameboard">
+    <div class="gameboard__spot" data-id="0">0</div>
+    <div class="gameboard__spot" data-id="1">1</div>
+    <div class="gameboard__spot" data-id="2">2</div>
+    <div class="gameboard__spot" data-id="3">3</div>
+    <div class="gameboard__spot" data-id="4">4</div>
+    <div class="gameboard__spot" data-id="5">5</div>
+    <div class="gameboard__spot" data-id="6">6</div>
+    <div class="gameboard__spot" data-id="7">7</div>
+    <div class="gameboard__spot" data-id="8">8</div>
+  </div>
+
+  <!-- tic-tac-tow controls -->
+  <div class="interface-module grid interface-module--grid">
+    <button class="interface__btn" id="start-button">Start</button>
+    <button  class="interface__btn" id="reset-button">Reset</button>
+    <label>P1 name:<input class="interface-module__input" type="text" id="p1-name" value="Player X"></label>
+    <label>P2 name:<input class="interface-module__input" type="text" id="p2-name" value="Player O"></label>
+  </div>
+
+</div>
+
+</body>
+</html>
